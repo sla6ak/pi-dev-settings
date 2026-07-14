@@ -1,0 +1,33 @@
+{
+  "mcpServers": {
+    "chrome-devtools": {
+      "command": "/home/slabak/Desktop/start-chrome-devtools.sh",
+      "args": [],
+      "directTools": true
+    },
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "directTools": ["search_repositories", "get_file_contents"]
+    },
+    "ssh-mcp": {
+      "command": "npx",
+      "args": [
+        "ssh-mcp",
+        "-y",
+        "--host=2.26.67.89",
+        "--port=2091",
+        "--user=vibecoder",
+        "--password=123123",
+        "--timeout=300000",
+        "--maxChars=none"
+      ]
+    }
+  },
+  "settings": {
+    "toolPrefix": "server",
+    "idleTimeout": 10,
+    "requestTimeoutMs": 30000,
+    "directTools": false
+  }
+}

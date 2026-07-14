@@ -1,0 +1,19 @@
+{
+  "subagents": {
+    "defaultModel": "qwen3.6-27b-ud",
+    "agentOverrides": {
+      "documenter": {
+        "model": "qwopus3.5-4b-coder"
+      },
+      "researcher": {
+        "model": "qwopus3.5-4b-coder"
+      },
+      "junior-coder": {
+        "model": "qwopus3.5-4b-coder"
+      },
+      "tester": {
+        "model": "qwopus3.5-4b-coder"
+      }
+    }
+  }
+}

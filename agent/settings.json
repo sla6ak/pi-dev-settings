@@ -1,0 +1,15 @@
+{
+  "lastChangelogVersion": "0.80.6",
+  "theme": "dark",
+  "defaultProvider": "lmstudio",
+  "defaultModel": "qwen3.6-27b-ud",
+  "systemPrompt": "../prompts/AGENTS.md",
+  // "packages": ["npm:pi-mcp-adapter", "npm:pi-subagents"],
+  "packages": ["npm:pi-mcp-adapter"],
+  "api": {
+    "timeout": 210000
+  },
+  "subagents": {
+    "defaultTimeoutMs": 210000
+  }
+}
