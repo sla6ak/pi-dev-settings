@@ -1884,6 +1884,57 @@
       ],
       "resources": [],
       "cachedAt": 1783675544480
+    },
+    "ssh-mcp": {
+      "configHash": "ece57f05aab7f05e986771cb6a903b8bfc68dd47aadfcb6ed60a304838118821",
+      "tools": [
+        {
+          "name": "exec",
+          "description": "Execute a shell command on the remote SSH server and return the output.",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "command": {
+                "type": "string",
+                "description": "Shell command to execute on the remote SSH server"
+              },
+              "description": {
+                "type": "string",
+                "description": "Optional description of what this command will do"
+              }
+            },
+            "required": [
+              "command"
+            ],
+            "additionalProperties": false,
+            "$schema": "http://json-schema.org/draft-07/schema#"
+          }
+        },
+        {
+          "name": "sudo-exec",
+          "description": "Execute a shell command on the remote SSH server using sudo. Will use sudo password if provided, otherwise assumes passwordless sudo.",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "command": {
+                "type": "string",
+                "description": "Shell command to execute with sudo on the remote SSH server"
+              },
+              "description": {
+                "type": "string",
+                "description": "Optional description of what this command will do"
+              }
+            },
+            "required": [
+              "command"
+            ],
+            "additionalProperties": false,
+            "$schema": "http://json-schema.org/draft-07/schema#"
+          }
+        }
+      ],
+      "resources": [],
+      "cachedAt": 1784059366579
     }
   }
 }

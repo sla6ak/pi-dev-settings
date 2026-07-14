@@ -2,14 +2,31 @@
   "lastChangelogVersion": "0.80.6",
   "theme": "dark",
   "defaultProvider": "lmstudio",
-  "defaultModel": "qwen3.6-27b-ud",
+  "defaultModel": "qwopus3.5-4b-coder",
   "systemPrompt": "../prompts/AGENTS.md",
-  // "packages": ["npm:pi-mcp-adapter", "npm:pi-subagents"],
-  "packages": ["npm:pi-mcp-adapter"],
+  "packages": [
+    "npm:pi-mcp-adapter",
+    "npm:pi-subagents"
+  ],
   "api": {
     "timeout": 210000
   },
   "subagents": {
-    "defaultTimeoutMs": 210000
+    "defaultTimeoutMs": 210000,
+    "defaultModel": "qwen3.6-27b-ud",
+    "agentOverrides": {
+      "documenter": {
+        "model": "qwopus3.5-4b-coder"
+      },
+      "researcher": {
+        "model": "qwopus3.5-4b-coder"
+      },
+      "junior-coder": {
+        "model": "qwopus3.5-4b-coder"
+      },
+      "tester": {
+        "model": "qwopus3.5-4b-coder"
+      }
+    }
   }
 }

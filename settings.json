@@ -1,4 +1,7 @@
 {
+  "defaultProvider": "lmstudio",
+  "defaultModel": "qwen3.6-27b-ud",
+  "packages": ["npm:pi-mcp-adapter"],
   "subagents": {
     "defaultModel": "qwen3.6-27b-ud",
     "agentOverrides": {

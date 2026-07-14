@@ -18,6 +18,12 @@
       "resolvedAt": 1783679879592,
       "packageVersion": "1.5.0",
       "isJs": true
+    },
+    "[\"npx\",\"ssh-mcp\",\"-y\",\"--host=2.26.67.89\",\"--port=2091\",\"--user=vibecoder\",\"--password=123123\",\"--timeout=300000\",\"--maxChars=none\"]": {
+      "resolvedBin": "/home/slabak/.npm/_npx/e1b9a49f0f079214/node_modules/ssh-mcp/build/index.js",
+      "resolvedAt": 1784059345877,
+      "packageVersion": "1.5.0",
+      "isJs": true
     }
   }
 }
